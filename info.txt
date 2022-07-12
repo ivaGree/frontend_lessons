@@ -15,3 +15,5 @@ git remote add origin git@github.com:ivaGree/frontend_lessons.git
 git branch -M main
 git push -u origin main
 ------------------------------------------------------
+npm start --> Разработка
+npm run build --> Сборка прод

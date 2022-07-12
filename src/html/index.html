@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Тестовый документ</title>
+        <link rel="stylesheet" href="css/main.min.css" />
+        <script src="js/main.min.js"></script>
+    </head>
+    <body>
+        @@include("chunk/header.html")
+
+        <h1 class="title">Тестовый документ - 23</h1>
+
+        <img src="../img/banner.jpg" alt="Фотка" width="500" />
+
+        <p class="news">Loddrem ipsum dolor sit amet consectetur adipisicing elit. Qui a ea tenetur! Exercitationem blanditiis, repellendus dolor temporibus facilis neque voluptatem labore est dolores maxime alias eligendi, quibusdam distinctio natus voluptatum.</p>
+        <hr />
+        @@loop("chunk/news-item.html", "../../data/news.json")
+        <hr />
+        @@include("chunk/footer.html")
+    </body>
+</html>
